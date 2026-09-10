@@ -1,1 +1,57 @@
-<h1>My Personal Blog is Coming Soon!</h1>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong's Blog</title>
+  <!-- 引入 Tailwind CSS 快速樣式庫 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 引入 Inter 經典設計字體 -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+  <!-- 1. Navbar 導覽列（高度 72px、底邊框、兩端對齊） -->
+  <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-18 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-xl font-bold text-gray-900 hover:opacity-80 transition-opacity">
+        Hong's Blog
+      </a>
+
+      <!-- 導覽選單 -->
+      <nav class="flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#articles" class="hover:text-gray-900 transition-colors">Articles</a>
+        <a href="#about" class="hover:text-gray-900 transition-colors">About</a>
+        <a href="#projects" class="hover:text-gray-900 transition-colors">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Hero 主視覺區塊（大留白、12欄對齊、Auto Layout 垂直佈局） -->
+  <main class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="max-w-3xl flex flex-col items-start gap-6">
+      
+      <!-- 主標題 (Figma: 56px Bold) -->
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+        Hi, I'm Pei. Just a few of my random thoughts written here.
+      </h1>
+
+      <!-- 副標題 / 簡介 (Figma: 18px Regular) -->
+      <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+        Welcom!
+      </p>
+
+      <!-- CTA 按鈕 (Figma: Auto Layout、圓角 8px) -->
+      <a href="#articles" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors shadow-sm mt-2">
+        Read Articles
+      </a>
+
+    </div>
+  </main>
+
+</body>
+</html>
