@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — Pei's Blog ZZz</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Main Container (維持相同的 12 欄網格邊界) -->
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 w-full flex-1 flex flex-col justify-between py-8 md:py-12">
+    
+    <!-- 1. Header / Navbar -->
+    <header class="flex items-center justify-between w-full">
+      <a href="index.html" class="text-xl md:text-2xl font-bold text-[#B91C1C] tracking-tight hover:opacity-80 transition-opacity">
+        Pei’s Blog ZZz
+      </a>
+
+      <nav class="flex items-center space-x-8 text-base md:text-lg font-medium text-black">
+        <a href="articles.html" class="text-[#B91C1C] font-bold">Articles</a>
+        <a href="#" class="hover:text-red-700 transition-colors">Works</a>
+        <a href="#" class="hover:text-red-700 transition-colors">About</a>
+      </nav>
+    </header>
+
+    <!-- 2. Main Content: Articles List -->
+    <main class="my-12 md:my-16">
+      
+      <!-- 頁面標題區塊 -->
+      <div class="border-b border-gray-200 pb-6 mb-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-black tracking-tight mb-2">
+          Random Thoughts
+        </h1>
+        <p class="text-lg text-gray-600">
+          關於建築結構、數位設計與生活隨筆的紀錄。
+        </p>
+      </div>
+
+      <!-- 文章列表 (垂直 Auto Layout 結構) -->
+      <div class="space-y-8 divide-y divide-gray-100">
+        
+        <!-- 文章卡片 1 -->
+        <article class="pt-8 first:pt-0 group cursor-pointer">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
+            <h2 class="text-2xl font-bold text-black group-hover:text-[#B91C1C] transition-colors">
+              <a href="#">建築空間中的光影與幾何節奏</a>
+            </h2>
+            <span class="text-sm font-mono text-gray-400">2026-04-12</span>
+          </div>
+          <p class="text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+            探討極簡主義建築中，光線如何透過結構開孔塑造空間的層次感與流動感...
+          </p>
+          <div class="flex items-center gap-3">
+            <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-600 font-medium rounded">Architecture</span>
+            <span class="text-xs text-[#B91C1C] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center">
+              Read Article &rarr;
+            </span>
+          </div>
+        </article>
+
+        <!-- 文章卡片 2 -->
+        <article class="pt-8 group cursor-pointer">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
+            <h2 class="text-2xl font-bold text-black group-hover:text-[#B91C1C] transition-colors">
+              <a href="#">從 12 欄網格談 Figma 與前端排版系統</a>
+            </h2>
+            <span class="text-sm font-mono text-gray-400">2026-03-28</span>
+          </div>
+          <p class="text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+            如何將 UI 設計中的 Layout Grid 精準對齊至 Tailwind CSS 的 Flexbox 與 Grid 佈局...
+          </p>
+          <div class="flex items-center gap-3">
+            <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-600 font-medium rounded">UI/UX Design</span>
+            <span class="text-xs text-[#B91C1C] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center">
+              Read Article &rarr;
+            </span>
+          </div>
+        </article>
+
+        <!-- 文章卡片 3 -->
+        <article class="pt-8 group cursor-pointer">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-2">
+            <h2 class="text-2xl font-bold text-black group-hover:text-[#B91C1C] transition-colors">
+              <a href="#">底片攝影隨筆：抓拍中的不確定美學</a>
+            </h2>
+            <span class="text-sm font-mono text-gray-400">2026-02-15</span>
+          </div>
+          <p class="text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+            記錄使用快照相機捕捉街景與動態模糊的紀錄，關於光線與顆粒感的思考...
+          </p>
+          <div class="flex items-center gap-3">
+            <span class="text-xs px-2.5 py-1 bg-gray-100 text-gray-600 font-medium rounded">Photography</span>
+            <span class="text-xs text-[#B91C1C] font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center">
+              Read Article &rarr;
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- 3. Footer (維持相同樣式) -->
+    <footer class="w-full pt-8 border-t border-gray-100">
+      <p class="text-xs sm:text-sm text-[#B91C1C] font-normal">
+        © 2026 Pei's Blog. All rights reserved.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
