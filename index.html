@@ -36,24 +36,38 @@
       </nav>
     </header>
 
-    <!-- 2. Hero Section -->
-    <main class="my-auto py-16 md:py-24">
-      <div class="max-w-4xl flex flex-col items-start gap-6 md:gap-8">
-        <!-- 大標題與副標題 -->
-        <div class="space-y-3 md:space-y-4">
-          <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-black tracking-tight leading-none">
-            Hi,I’m Pei !
-          </h1>
-          <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-black tracking-tight leading-tight">
-            Just a few of my random thoughts written here.
-          </p>
-        </div>
+ <!-- Hero 區塊 (左右雙欄佈局) -->
+<main class="my-auto py-12 md:py-20">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+    
+    <!-- 左側文字 (佔 7 欄) -->
+    <div class="md:col-span-7 flex flex-col items-start gap-6">
+      <div class="space-y-3 md:space-y-4">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-black tracking-tight leading-none">
+          Hi, I’m Pei !
+        </h1>
+        <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-black tracking-tight leading-tight">
+          Just a few of my random thoughts written here.
+        </p>
+      </div>
 
-        <!-- 按鈕 -->
-        <a href="article.html" class="mt-2 inline-flex items-center justify-center px-6 py-3 bg-[#B91C1C] text-white text-base md:text-lg font-medium rounded-sm shadow-sm hover:bg-red-800 transition-colors duration-200">
-       Click !
-     </a>
-    </main>
+      <a href="#articles" class="mt-2 inline-flex items-center justify-center px-6 py-3 bg-[#B91C1C] text-white text-base md:text-lg font-medium rounded-sm shadow-sm hover:bg-red-800 transition-colors duration-200">
+        Click !
+      </a>
+    </div>
+
+    <!-- 右側圖片 (佔 5 欄) -->
+    <div class="md:col-span-5 w-full">
+      <img 
+        src="images/95420036.jpg" 
+        alt="Pei" 
+        class="w-full h-auto aspect-[4/5] object-cover rounded-md border border-gray-100 shadow-sm"
+        loading="lazy"
+      />
+    </div>
+
+  </div>
+</main>
 
     <!-- 3. Footer -->
     <footer class="w-full pt-8">
