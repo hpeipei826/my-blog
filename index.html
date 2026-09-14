@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOC<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
@@ -36,46 +36,30 @@
       </nav>
     </header>
 
-    <!-- 2. Hero Section (7 欄文字 + 5 欄圖片雙欄結構) -->
+    <!-- 2. Hero Section (單欄文字佈局，完全還原截圖) -->
     <main class="my-auto py-12 md:py-20">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="flex flex-col items-start gap-6 max-w-4xl">
         
-        <!-- 左側文字區塊 (佔 12 欄中的 7 欄) -->
-        <div class="md:col-span-7 flex flex-col items-start gap-6">
-          <!-- 標題 -->
-          <div class="space-y-3 md:space-y-4">
-            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-black tracking-tight leading-none">
-              Hi,I’m Pei !
-            </h1>
-            <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-black tracking-tight leading-tight">
-              Just a few of my random thoughts written here.
-            </p>
-          </div>
-
-          <!-- 按鈕連結 (加大的 Click ! :-) 紅底按鈕) -->
-          <a href="#articles" class="mt-2 inline-flex items-center justify-center px-8 py-4 bg-[#B91C1C] text-white text-3xl sm:text-4xl md:text-5xl font-bold rounded-none shadow-none hover:bg-red-800 transition-colors duration-200">
-            Click ! :-)
-          </a>
-
-          <!-- 按鈕下方的簡介敘述 -->
-          <p class="text-sm md:text-base text-gray-500 font-medium leading-relaxed max-w-xl mt-4">
-            因為太無聊的關係，研究了怎麼寫網頁想要建一個屬於自己的無名小站<br class="hidden sm:inline">
-            有紀錄夢境的習慣，決定把過去精選的夢還有雜記都放在這裡......
+        <!-- 大標題與副標題 -->
+        <div class="space-y-3 md:space-y-4">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-black tracking-tight leading-none">
+            Hi,I’m Pei !
+          </h1>
+          <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-black tracking-tight leading-tight">
+            Just a few of my random thoughts written here.
           </p>
         </div>
 
-        <!-- 右側圖片區塊 (佔 12 欄中的 5 欄) -->
-        <div class="md:col-span-5 w-full">
-          <!-- 請將 src 中的 images/profile.jpg 替換為你的照片檔名 -->
-          <div class="overflow-hidden rounded-md border border-gray-100 shadow-sm bg-gray-50 aspect-[4/5]">
-            <img 
-              src="images/profile.jpg" 
-              alt="Pei Profile" 
-              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
-          </div>
-        </div>
+        <!-- 按鈕連結 (加大的 Click ! :-) 紅底白字) -->
+        <a href="#articles" class="mt-2 inline-flex items-center justify-center px-8 py-4 bg-[#B91C1C] text-white text-3xl sm:text-4xl md:text-5xl font-bold rounded-none shadow-none hover:bg-red-800 transition-colors duration-200">
+          Click ! :-)
+        </a>
+
+        <!-- 按鈕下方的灰色敘述文字 -->
+        <p class="text-sm md:text-base text-gray-500 font-medium leading-relaxed max-w-xl mt-4">
+          因為太無聊的關係，研究了怎麼寫網頁想要建一個屬於自己的無名小站<br class="hidden sm:inline">
+          有紀錄夢境的習慣，決定把過去精選的夢還有雜記都放在這裡......
+        </p>
 
       </div>
     </main>
