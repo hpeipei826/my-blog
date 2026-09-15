@@ -2,10 +2,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Works — Pei's Blog ZZz</title>
+  <title>Pei's Blog ZZz — Hero</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Space Mono (適合這種 Lookbook 簡約風格) -->
+  <!-- Google Fonts: Space Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -13,132 +13,94 @@
     body {
       font-family: 'Space Mono', monospace, sans-serif;
     }
-    /* 隱藏預設捲動條，保持畫面乾淨 */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
   </style>
 </head>
 <body class="bg-[#F5F5F3] text-black antialiased min-h-screen flex flex-col justify-between select-none">
 
-  <!-- 1. 頂部頁首 Navbar -->
-  <header class="w-full px-8 py-6 flex justify-between items-center text-xs tracking-wider uppercase font-bold">
-    <div>
-      <a href="index.html" class="hover:text-[#B91C1C] transition-colors">Pei's Blog ZZz</a>
-    </div>
-    <div class="text-gray-400">[Works Gallery]</div>
-    <nav class="flex gap-6">
+  <!-- 1. Header / Navbar -->
+  <header class="w-full border-b border-black/10 px-6 md:px-12 py-6 flex justify-between items-center text-xs tracking-wider uppercase font-bold">
+    <a href="index.html" class="text-[#B91C1C] hover:opacity-80 transition-opacity">
+      Pei’s Blog ZZz
+    </a>
+    <div class="hidden sm:block text-gray-400">[00 / ARCHIVE]</div>
+    <nav class="flex items-center space-x-6">
       <a href="articles.html" class="hover:text-[#B91C1C] transition-colors">Articles</a>
-      <a href="#" class="text-[#B91C1C]">Works</a>
+      <a href="#" class="hover:text-[#B91C1C] transition-colors">Works</a>
       <a href="#" class="hover:text-[#B91C1C] transition-colors">About</a>
     </nav>
   </header>
 
-  <!-- 2. 中央作品展覽滑動區塊 (Horizontal Interactive Gallery) -->
-  <main class="my-auto py-12 w-full">
-    <!-- 橫向滾動容器 -->
-    <div class="flex items-center gap-6 px-12 md:px-24 overflow-x-auto no-scrollbar py-20">
+  <!-- 2. Gallery Editorial Style Hero Section -->
+  <main class="my-auto py-12 md:py-20 px-6 md:px-12 max-w-7xl mx-auto w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
       
-      <!-- 卡片 1 (Hover 放大 + 上方顯示簡述) -->
-      <a href="article-detail.html" class="group relative flex-shrink-0 w-36 sm:w-44 transition-all duration-500 ease-out hover:w-64 sm:hover:w-80">
-        <!-- Hover 浮現的簡述文字 (定位於圖片上方) -->
-        <div class="absolute -top-20 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none pb-4">
-          <p class="text-[10px] text-gray-400 font-mono">[01]</p>
-          <p class="text-xs font-bold uppercase tracking-tighter text-black leading-tight">
-            EXPLORE SS26 COLLECTION, ARCHIVE GALLERY.
-          </p>
-        </div>
+      <!-- 左側：標題與隨筆內文 (佔 7 欄) -->
+      <div class="lg:col-span-7 flex flex-col gap-8">
         
-        <!-- 圖片本體 (Hover 變大與微幅亮起) -->
-        <div class="w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-gray-300 group-hover:shadow-2xl transition-all duration-500">
-          <img 
-            src="images/work-1.jpg" 
-            alt="Work 1" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
+        <!-- 上方小標註 -->
+        <div class="flex items-center gap-3 text-xs text-gray-400 uppercase tracking-widest font-mono">
+          <span class="text-[#B91C1C] font-bold">[HERO]</span>
+          <span>// PERSONAL ARCHIVE & EDITORIAL</span>
         </div>
-      </a>
 
-      <!-- 卡片 2 -->
-      <a href="article-detail.html" class="group relative flex-shrink-0 w-36 sm:w-44 transition-all duration-500 ease-out hover:w-64 sm:hover:w-80">
-        <div class="absolute -top-20 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none pb-4">
-          <p class="text-[10px] text-gray-400 font-mono">[02]</p>
-          <p class="text-xs font-bold uppercase tracking-tighter text-black leading-tight">
-            SPATIAL & LIGHT STUDY, ARCHITECTURAL VISION.
+        <!-- 主標題 (Space Mono 獨特的單色大字結構) -->
+        <div class="space-y-4">
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter leading-none text-black">
+            HI, I’M PEI !
+          </h1>
+          <p class="text-lg sm:text-2xl font-bold text-gray-700 tracking-tight leading-snug">
+            JUST A FEW OF MY RANDOM THOUGHTS WRITTEN HERE.
           </p>
         </div>
-        <div class="w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-gray-300 group-hover:shadow-2xl transition-all duration-500">
-          <img 
-            src="images/work-2.jpg" 
-            alt="Work 2" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-        </div>
-      </a>
 
-      <!-- 卡片 3 (預設焦點卡片展示效果) -->
-      <a href="article-detail.html" class="group relative flex-shrink-0 w-36 sm:w-44 transition-all duration-500 ease-out hover:w-64 sm:hover:w-80">
-        <div class="absolute -top-20 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none pb-4">
-          <p class="text-[10px] text-gray-400 font-mono">[03]</p>
-          <p class="text-xs font-bold uppercase tracking-tighter text-black leading-tight">
-            MINIMALIST MONOCHROME, EDITORIAL DESIGN.
+        <!-- 大型 Click 按鈕 + 隨筆敘述 -->
+        <div class="space-y-6 pt-2">
+          <a href="articles.html" class="inline-block px-8 py-4 bg-[#B91C1C] text-white text-2xl sm:text-3xl font-bold tracking-wider hover:bg-black transition-colors duration-300">
+            CLICK ! :-)
+          </a>
+
+          <p class="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed max-w-lg border-l-2 border-black/20 pl-4">
+            因為太無聊的關係，研究了怎麼寫網頁想要建一個屬於自己的無名小站<span class="whitespace-nowrap">（...這樣算有搭上2026文藝復興潮嗎？）</span><br>
+            有紀錄夢境的習慣，決定把過去精選的夢還有日常雜記都放在這裡！
           </p>
         </div>
-        <div class="w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-gray-300 group-hover:shadow-2xl transition-all duration-500">
-          <img 
-            src="images/work-3.jpg" 
-            alt="Work 3" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-        </div>
-      </a>
 
-      <!-- 卡片 4 -->
-      <a href="article-detail.html" class="group relative flex-shrink-0 w-36 sm:w-44 transition-all duration-500 ease-out hover:w-64 sm:hover:w-80">
-        <div class="absolute -top-20 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none pb-4">
-          <p class="text-[10px] text-gray-400 font-mono">[04]</p>
-          <p class="text-xs font-bold uppercase tracking-tighter text-black leading-tight">
-            URBAN SNAPSHOTS & FILM PHOTOGRAPHY.
-          </p>
-        </div>
-        <div class="w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-gray-300 group-hover:shadow-2xl transition-all duration-500">
-          <img 
-            src="images/work-4.jpg" 
-            alt="Work 4" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          />
-        </div>
-      </a>
+      </div>
 
-      <!-- 卡片 5 -->
-      <a href="article-detail.html" class="group relative flex-shrink-0 w-36 sm:w-44 transition-all duration-500 ease-out hover:w-64 sm:hover:w-80">
-        <div class="absolute -top-20 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none pb-4">
-          <p class="text-[10px] text-gray-400 font-mono">[05]</p>
-          <p class="text-xs font-bold uppercase tracking-tighter text-black leading-tight">
-            CONCEPTUAL GRID & TAILWIND STACK.
-          </p>
-        </div>
-        <div class="w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-gray-300 group-hover:shadow-2xl transition-all duration-500">
+      <!-- 右側：藝文畫廊風視覺卡片 (佔 5 欄, 帶 Hover 動態) -->
+      <div class="lg:col-span-5 w-full">
+        <a href="articles.html" class="group block relative w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-black/20 shadow-sm transition-all duration-500 hover:border-black">
+          
+          <!-- 圖片角落標註 -->
+          <div class="absolute top-4 left-4 z-10 bg-black text-white text-[10px] font-mono px-2 py-1 uppercase tracking-widest">
+            FIG. 01 / FEATURED
+          </div>
+
+          <!-- 預覽圖片 (Hover 放大效果) -->
           <img 
-            src="images/work-5.jpg" 
-            alt="Work 5" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            src="images/profile.jpg" 
+            alt="Editorial Cover" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-125 group-hover:grayscale-0"
+            loading="lazy"
           />
-        </div>
-      </a>
+
+          <!-- 底部浮現的簡述遮罩 -->
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            <span class="text-[10px] text-gray-300 font-mono tracking-widest uppercase">[RECENT ENTRY]</span>
+            <p class="text-xs text-white font-bold tracking-tight uppercase leading-relaxed mt-1">
+              SUN, 2024/10/13 — A DREAM ABOUT DISASTER AND RED PAPER.
+            </p>
+          </div>
+        </a>
+      </div>
 
     </div>
   </main>
 
-  <!-- 3. 底部宣告 Footer -->
-  <footer class="w-full px-8 py-6 flex justify-between items-center text-xs tracking-wider uppercase font-bold text-gray-400">
-    <div>PEI STUDIO</div>
-    <div>[INDEX]</div>
-    <div class="text-[#B91C1C]">© 2026 PEI'S BLOG</div>
+  <!-- 3. Footer -->
+  <footer class="w-full border-t border-black/10 px-6 md:px-12 py-6 flex justify-between items-center text-xs font-bold uppercase tracking-wider">
+    <div class="text-gray-400">PEI's STUDIO</div>
+    <div class="text-[#B91C1C]">© 2026 PEI'S BLOG. ALL RIGHTS RESERVED.</div>
   </footer>
 
 </body>
