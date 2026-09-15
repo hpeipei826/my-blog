@@ -35,7 +35,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
       
       <!-- 左側：標題與隨筆內文 (佔 7 欄) -->
-      <div class="lg:col-span-7 flex flex-col gap-8">
+      <div class="lg:col-span-10 flex flex-col gap-8">
         
         <!-- 上方小標註 -->
         <div class="flex items-center gap-3 text-xs text-gray-400 uppercase tracking-widest font-mono">
@@ -67,22 +67,7 @@
 
       </div>
 
-      <!-- 右側：藝文畫廊風視覺卡片 (佔 5 欄, 帶 Hover 動態) -->
-      <div class="lg:col-span-5 w-full">
-        <a href="articles.html" class="group block relative w-full aspect-[3/4] overflow-hidden bg-gray-200 border border-black/20 shadow-sm transition-all duration-500 hover:border-black">
-          
-          <!-- 圖片角落標註 -->
-          <div class="absolute top-4 left-4 z-10 bg-black text-white text-[10px] font-mono px-2 py-1 uppercase tracking-widest">
-            FIG. 01 / FEATURED
-          </div>
-
-          <!-- 預覽圖片 (Hover 放大效果) -->
-          <img 
-            src="images/profile.jpg" 
-            alt="Editorial Cover" 
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-125 group-hover:grayscale-0"
-            loading="lazy"
-          />
+      
 
           <!-- 底部浮現的簡述遮罩 -->
           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 flex flex-col justify-end translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
